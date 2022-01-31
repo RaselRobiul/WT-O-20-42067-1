@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.tab{
+			tab-size: 8;
+		}
+
+		.selectsize{
+			width: 250px;
+        	margin: 0px;
+		}
+
+		.ex1 {
+  			padding-left: 785px;
+		}
+		.ex2 {
+  			padding-left: 800px;
+		}
+		.ex3 {
+  			padding-left: 825px;
+		}
+		.ex4 {
+  			padding-left: 790px;
+		}
+		.ex5 {
+  			padding-left: 797px;
+		}
+		.ex6 {
+  			padding-left: 784px;
+		}
+		.ex7 {
+  			padding-left: 821px;
+		}
+		.ex8 {
+  			padding-left: 793px;
+		}
+		.ex9 {
+  			padding-left: 800px;
+		}
+		.ex10 {
+  			padding-left: 850px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+
+		<!--First div-->
+		<div align="left">
+
+			<h5><span class style="color:red"required>*</span>-Donets Required Informatin</h5>
+			<pre><a style="text-decoration:none" href="" target="_self">>1 Donation</a>	<a style="text-decoration:none" href="" target="_self"> >2 Confirmation</a> 	<a style="text-decoration:none" href="" target="_self"> >3 Thank You!</a></pre>
+			<h2 style="color: red;"> Donor Information</h2>
+
+			<p>
+				<label  class="ex6"for="fname">First Name<span class style="color:red"required>*</span></label>
+				<input id="fname" type="text" name="fname">
+			</p>
+
+			<p>
+				<label class="ex1" for="lname">Last Name<span class style="color:red"required>*</span></label>
+				<input id="lname" type="text" name="lname">
+			</p>
+
+			<p>
+				<label class="ex2" for="com">Company</label>
+				<input id="com" type="text" name="com">
+			</p>
+
+			<p>
+				<label class="ex4"for="add1">Address 1<span class style="color:red"required>*</span></label>
+				<input id="add1" type="text" name="add1">
+			</p>
+
+			<p>
+				<label class="ex5" for="add2">Address 2</label>
+				<input id="add2" type="text" name="add2">
+			</p>
+
+			<p>
+				<label class="ex3" for="city">City<span class style="color:red"required>*</span></label>
+				<input id="city" type="text" name="city">
+			</p>
+
+		</div>
+
+		<!--Second div-->
+		<div>
+			<label class="ex7" for="state" >State<span class style="color:red"required>*</span></label>
+			<select id="state" name="state" size="1" >
+				<option value="select a state" selected>Select a State</option>
+				<option value="dhaka">Dhaka</option>
+				<option value="rajshahi">Rajshahi</option>
+				<option value="sylhet">Sylhet</option>
+				<option value="chitagong">Chitagong</option>
+				<option value="barishal">Barishal</option>
+				<option value="khulna">Khulna</option>
+			</select>
+
+			<p>
+				<label class="ex8" for="zcode">Zip Code<span class style="color:red"required>*</span></label>
+				<input id="zcode" type="text" name="zcode">
+			</p>
+
+			<label class="ex9" for="country">Country<span class style="color:red"required>*</span></label>
+			<select class="selectsize" id="conuntry" name="country" size="1">
+				<option value="select a country" selected>Select a Country</option>
+				<option value="bangladesh">Bangladesh</option>
+				<option value="india">India</option>
+				<option value="s.korea">South Korea</option>
+				<option value="japan">Japan</option>
+				<option value="pakistan">Pakistan</option>
+			</select>
+
+			<p>
+				<label class="ex8" for="phn">Phone</label>
+				<input id="phn" type="text" name="phn">
+			</p>
+
+			<p>
+				<label class="ex8" for="fax">Fax</label>
+				<input id="fax" type="text" name="fax">
+			</p>
+
+			<p>
+				<label class="ex8" for="email">Email<span class style="color:red"required>*</span></label>
+				<input id="email" type="text" name="email">
+			</p>
+
+			<label class="ex8" for="dammount"><b>Donation Amount:</b><span class style="color:red"required>*</span>
+    		<input type="radio" id="none" name="ammount" value="None">
+    		<label for="none">None</label>
+    		<input type="radio" id="$50" name="ammount" value="$50">
+    		<label for="$50">$50</label>
+    		<input type="radio" id="$75" name="ammount" value="$75">
+    		<label for="$75">$75</label>
+    		<input type="radio" id="$100" name="ammount" value="$100">
+    		<label for="$100">$100</label>
+    		<input type="radio" id="$250" name="ammount" value="$250">
+    		<label for="$250">$250</label>
+    		<input type="radio" id="other" name="ammount" value="other">
+    		<label for="other">Other</label><br>
+
+    		<label class="ex8" for="oammount"><b>Other Amount $:</b></label>
+   		    <input type="text" id="oammount" name="oammount" value="">
+
+   		    <center>
+    		<p><b>Recurring Donation</b>
+    		<input type="checkbox" id="Recurring Donation" name="Recurring Donation"  value="Recurring Donation">
+   			<label for="Recurring Donation">I am interested in giving on a regular basis.</label></p>
+  		    <label for="fname">Monthly Credit Card $</label>
+    		<input type="text" id="fname" name="fname" value="">
+    		<label for="fname">For</label>
+    		<input type="text" id="fname" name="fname" value=""> Months
+    		</center>
+
+		</div>
+
+		<!--3rd div-->
+		<div>
+			<h2 style="color:red;">Honorarium and Memorial Donation Information</h2>
+
+
+
+
+
+
+		</div>
+
+	    </fieldset>
+	</form>
+</body>
+</html>
